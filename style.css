@@ -3,9 +3,13 @@
 }
 
 [class^='row'] {
-    border: 3px dashed orchid;
+    border: 3px dashed rgb(128, 9, 124);
 }
 
 [class^='col'] {
-    border: 3px dashed blue;
+    border: 3px solid rgb(146, 146, 30);
+}
+
+.min-height {
+    min-height: 500px;
 }
