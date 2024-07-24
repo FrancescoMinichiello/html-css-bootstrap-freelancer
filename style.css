@@ -9,7 +9,3 @@
 [class^='col'] {
     border: 3px solid rgb(146, 146, 30);
 }
-
-.min-height {
-    min-height: 500px;
-}
