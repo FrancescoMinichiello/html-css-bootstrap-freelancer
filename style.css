@@ -1,11 +1,52 @@
-[class^='container'] {
-    border: 3px dashed red;
+/*Generics*/
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
-[class^='row'] {
-    border: 3px dashed rgb(128, 9, 124);
+ul {
+    list-style-type: none;
 }
 
-[class^='col'] {
-    border: 3px solid rgb(146, 146, 30);
+/*Utils*/
+
+.bg-header {
+    background-color: #2C3E50;
+}
+
+.bg-main {
+    background-color: #17BC9D;
+}
+
+.bg-footer {
+    background-color: #3B546D;
+}
+
+.color-main {
+    color: #17BC9D;
+}
+
+/*Button*/
+
+.btn-download,
+.btn-send {
+    color: white;
+    background-color: #17BC9D;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.btn-download:hover {
+    scale: 1.1;
+}
+
+
+
+.social-icons {
+
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 15px;
+
 }

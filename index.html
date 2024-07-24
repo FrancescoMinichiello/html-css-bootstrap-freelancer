@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Font awesome-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
+        integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
+        crossorigin='anonymous' />
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,56 +17,70 @@
 
 <body>
     <!--Header-->
-    <header class="container py-2">
-        <div class="row p-3">
-            <div class="col">
-                <span><strong>LOGO</strong></span>
+    <header class="container-fluid py-2 bg-header text-white">
+        <div class="row p-3 align-items-center">
+            <div class="col-8">
+                <h2 class="m-0">START BOOSTRAP</h2>
             </div>
-            <div class="col text-end">
-                <span><strong>NAV</strong></span>
+            <div class="col d-sm-block d-md-none text-end">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+            <div class="col-4 d-none d-md-block">
+                <ul class="m-0 d-flex gap-4 text-end justify-content-end">
+                    <li>
+                        <a href="#">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
     <main>
-        <div class="container-fluid py-2">
+        <div class="container-fluid py-2 bg-main">
             <div class="row justify-content-center text-center p-3">
-                <div class="col-6">
-                    <span><strong>IMMAGINE</strong></span>
-                    <h1>TITOLO</h1>
-                    <span><strong>ICONA</strong></span>
-                    <h6>SCRITTA SCRITTA SCRITTA</h6>
+                <div class="col-12 text-white">
+                    <!--DA CANCELLARE-->
+                    <img src="img/ragazzo.png" alt="Ragazzo">
+                    <h1 class="m-0">START BOOTSTRAP</h1>
+                    <span><i class="fa-solid fa-star fa-2x my-3"></i></span>
+                    <h6 class="m-0">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
                 </div>
             </div>
         </div>
         <!--Images-->
         <div class="container text-center py-2">
-            <h4>SCRITTA</h4>
-            <span><strong>ICONA</strong></span>
+            <h4>PORTFOLIO</h4>
+            <span><i class="fa-solid fa-star fa-2x my-3"></i></span>
             <div class="row p-3">
-                <div class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="col-12 col-md-6 col-lg-4 p-2 bg-secondary">
                     IMMAGINE 1
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="col-12 col-md-6 col-lg-4 p-2 bg-secondary">
                     IMMAGINE 2
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="col-12 col-md-6 col-lg-4 p-2 bg-secondary">
                     IMMAGINE 3
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="col-12 col-md-6 col-lg-4 p-2 bg-secondary">
                     IMMAGINE 4
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="col-12 col-md-6 col-lg-4 p-2 bg-secondary">
                     IMMAGINE 5
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 p-2">
+                <div class="col-12 col-md-6 col-lg-4 p-2 bg-secondary">
                     IMMAGINE 6
                 </div>
             </div>
         </div>
         <!--About-->
-        <div class="container-fluid text-center py-2">
-            <h4>SCRITTA</h4>
-            <span><strong>ICONA</strong></span>
+        <div class="container-fluid text-center py-2 bg-main text-white">
+            <h4>ABOUT</h4>
+            <span><i class="fa-solid fa-star fa-2x my-3"></i></span>
             <div class="row justify-content-center p-3">
                 <div class="col-12 col-md-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam amet porro accusantium, adipisci
@@ -74,36 +92,62 @@
                         quod, magni repudiandae dolor sequi ullam, omnis vero quae minima. Perferendis possimus
                         obcaecati nemo assumenda? Fugiat, dolore facere.</p>
                 </div>
+                <div class="col-12">
+                    <button class="btn-download"> <i class="fa-solid fa-download"></i> Download</button>
+                </div>
             </div>
         </div>
         <!--Contact-->
         <div class="container text-center py-2">
             <div class="row justify-content-center p-3">
-                <h4>SCRITTA</h4>
-                <span><strong>ICONA</strong></span>
-                <div class="col-12 col-md-8 text-start">
-                    CONTATTI
+                <h4>CONTACT ME</h4>
+                <span><i class="fa-solid fa-star fa-2x my-3"></i></span>
+                <div class="col-12 col-md-8 text-start border-bottom mb-3">
+                    <strong>NAME</strong>
+                </div>
+                <div class="col-12 col-md-8 text-start border-bottom mb-3">
+                    <strong>EMAIL ADDRESS</strong>
+                </div>
+                <div class="col-12 col-md-8 text-start border-bottom mb-3">
+                    <strong>PHONE NUMBER</strong>
+                </div>
+                <div class="col-12 col-md-8 text-start border-bottom pb-5">
+                    <strong>MESSAGE</strong>
+                </div>
+                <div class="col-12 col-md-8 text-start pt-5">
+                    <button class="btn-send">Send</button>
                 </div>
             </div>
         </div>
     </main>
     <!--Footer-->
     <footer>
-        <div class="container-fluid text-center py-2">
-            <div class="row justify-content-center p-3">
-                <div class="col-12 col-md-4">
-                    SCRITTA
+        <div class="container-fluid text-center py-2 bg-footer text-white">
+            <div class="row justify-content-center align-items-center p-3">
+                <div class="col-12 col-md-4 mb-4">
+                    <span>LOCATION</span>
+                    <address>2215 John Daniel Drive Clark, MO 54243</address>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div><span>AROUND THE WEB</span></div>
+                    <div class="my-4"><a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    SCRITTA
-                </div>
-                <div class="col-12 col-md-4">
-                    SCRITTA
+                    <span>ABOUT FREELANCER</span>
+                    <p>Freelance is a free to use, open source Bootstrap theme created by <span><a href="#"
+                                class="color-main">Start
+                                Bootstrap</a>.</span></p>
                 </div>
             </div>
-            <div class="row justify-content-center p-3">
+        </div>
+        <div class="container-fluid text-center bg-footer text-white">
+            <div class="row justify-content-center align-items-center py-4 bg-header text-white">
                 <div class="col">
-                    SCRITTA
+                    <p class="m-0">Copyright Your Website 2019</p>
                 </div>
             </div>
         </div>
