@@ -1,0 +1,8 @@
+header {
+    height: 100px;
+    background-color: aqua;
+}
+
+.col {
+    border: 1px dashed red;
+}
