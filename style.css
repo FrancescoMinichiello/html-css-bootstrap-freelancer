@@ -1,8 +1,11 @@
-header {
-    height: 100px;
-    background-color: aqua;
+[class^='container'] {
+    border: 3px dashed red;
 }
 
-.col {
-    border: 1px dashed red;
+[class^='row'] {
+    border: 3px dashed orchid;
+}
+
+[class^='col'] {
+    border: 3px dashed blue;
 }
